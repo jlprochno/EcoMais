@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1.1em;
+}
+
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em 2em;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2, h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #4CAF50;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1.5em;
+}
+
+#about, #informations, #details, #types-of-waste, #qr-codes, #where, #form{
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #e7f5e6;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 0.5em 0;
+    padding: 0.8em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+    display: inline-block;
+    margin: 1em;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+}
+
+.qr-code img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code p {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li::before {
+    content: "•";
+    color: rgb(0, 0, 0);
+}
+
+.botao-verde {
+
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.botao-verde:hover {
+    background-color: #45a049;
+}
